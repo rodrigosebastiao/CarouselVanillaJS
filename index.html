@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        //Fallback
+        window.jQuery || document.write('<script src="/js/jquery-3.2.1.min.js"><\/script>');
+    </script>
+    <title>Carousel Vanilla JS</title>
+</head>
+
+
+<body>
+    
+    <main>
+    <section id="slider-container">
+        <div class="central-container">
+        
+            <h1 id="title">Free Fall!</h1>
+            <p style="color:white">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+
+            <div class="slider-wrap">
+
+                <div class="slider-hide">
+                    <div class="slider-bar">
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(1).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">Switzerland</h2>
+                                    <p class="place">Swiss > Alps</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(2).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">Nazca</h2>
+                                    <p class="place">Peru > Nazca</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(3).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">Hawaii</h2>
+                                    <p class="place">Hawaii > Volcano</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(4).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">New Mexico</h2>
+                                    <p class="place">New Mexico > Albuquerque</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(5).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">Puerto Rico</h2>
+                                    <p class="place">Puerto Rico > Ponce</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(6).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">Switzerland</h2>
+                                    <p class="place">Switzerland > Berna</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(7).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">Chile</h2>
+                                    <p class="place">Chile > Santiago</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="slides">
+                            <div class="frame">
+                                <div class="images">
+                                    <span class="tag-45">Wingsuit</span>
+                                    <img src="images/wing(8).jpg" alt="Wing Stunt">
+                                </div>
+                                <div class="text">
+                                    <h2 class="country">Maui Island</h2>
+                                    <p class="place">Maui Island > Makawao</p>
+                                    <div class="dash">
+                                        <p class="detail">Facere ducimus exercitationem debitis ex quasi quo velit molestiae quam reiciendis sequi.</p>
+                                        <a href="#">
+                                            <button class="info">See now!</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div><!--slider-bar-->
+                        
+                </div><!--hidden sides-->
+
+                <button class="prev" onclick="spin('-', 'slides', 'slider-bar');"></button>
+                <button class="next" onclick="spin('+', 'slides', 'slider-bar');"></button>
+            </div><!--slider-wrap-->
+        </div><!--central-container-->
+    </section>
+    
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>

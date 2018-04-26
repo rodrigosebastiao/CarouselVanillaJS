@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Nolan Extra Bold";
+    src: local("fonts/Nolan-ExtraBold.ttf");
+    src: url("fonts/Nolan-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: local("fonts/PT_Sans-Web-Regular.ttf");
+    src: url("fonts/PT_Sans-Web-Regular.ttf");
+}
+
+body{
+    margin: 0;
+}
+
+.central-container{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#title{
+    font-family: "PT Sans", sans-serif,Helvetica;
+    font-weight: bolder;
+    color: white;
+}
+
+
+#slider-container{
+    top: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    /*Create BG pattern*/
+    background:
+    radial-gradient(rgba(50,50,50,0.06) 0.5px, transparent 2px), 
+    radial-gradient(rgba(50,50,50,0.05) 0.5px, transparent 2px),
+    radial-gradient(rgba(50,50,50,0.05) 0.5px, transparent 2px), 
+    radial-gradient(rgba(50,50,50,0.06) 0.5px, transparent 2px),
+    rgb(0, 174, 255);
+    background-size: 16px 16px, 16px 16px, 16px 16px, 16px 16px;
+    background-position: 0px 0px, 8px 0px, 0px 8px, 8px 8px;
+    margin: 20px 0 0px;
+    padding: 10px 0 px;
+}
+
+
+#slider-container div h2, 
+#slider-container p:nth-child(n+3){
+    margin: 0px 10px;
+}
+
+#slider-container h2{
+    color: rgb(21, 132, 223);
+    font-size: 16px;
+    margin: 0px 10px 5px;
+}
+
+#slider-container p{
+    font-size: 12px;
+    font-family: "Nolan Extra Bold", "PT Sans", sans-serif, Helvetica;
+}
+
+
+.tag-45{/*Tag premium*/
+    position: absolute;
+    left: -30px; top: 20px;
+    background:rgb(21, 132, 223);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0px 30px;
+    line-height: 15px;
+    color: white;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    font-family: "Nolan Extra Bold";
+    font-size: 12px;
+}
+
+/*Slider*/
+.slider-wrap{
+    position: relative;/*to childs button*/
+}
+
+.slider-wrap .prev, 
+.slider-wrap .next{
+    position: absolute;
+    border-radius: 5px;
+    border: none;
+    top: 30%;
+    width: 50px;
+    height: 120px;
+    padding: 50px 10px;
+}
+
+.slider-wrap .prev{
+    background: url(images/setaesq.png) no-repeat 10px; 
+    left: -80px;
+} 
+
+.slider-wrap .next{
+    background: url(images/setadir.png) no-repeat 10px;
+    right: -80px;
+}
+
+.slider-wrap .prev:hover{
+    background: url(images/setaesq.png) no-repeat 10px rgba(0,0,0,0.1);
+} 
+
+.slider-wrap .next:hover{
+    background: url(images/setadir.png) no-repeat 10px rgba(0,0,0,0.1);
+}
+
+.slider-hide{
+    overflow: hidden;
+    width: 1200px;
+}
+
+.slider-bar{
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.slider-bar img{
+    width: 270px;
+}
+
+.slider-bar article{
+    margin: 0px 40px 50px 0px;
+}
+
+.dash{/*line*/
+    border-top: 1px solid #DDD;
+    margin: 0 10px;
+}
+
+.slides{
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    vertical-align: top;
+}
+
+.slider-bar .place{
+    font-size: 12px;
+    font-weight: 600;
+    color:rgb(21, 132, 223);
+    margin: 0px 0px 10px 10px;
+}
+
+.frame{
+    background: white;
+    padding: 0 0 20px 0;
+}
+
+.frame .images{
+    background: black;
+    width: 265;
+    height: 218px;
+}
+
+.frame .images img {/*fix image to middle*/
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+button.info{
+    height: 25px;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background: #00ADA9;
+    color: white;
+    font-family: "PT Sans", sans-serif, Helvetica;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}
