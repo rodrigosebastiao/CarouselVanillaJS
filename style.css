@@ -20,11 +20,15 @@ body{
 }
 
 #title{
-    font-family: "PT Sans", sans-serif,Helvetica;
+    font-family: "PT Sans", sans-serif, Helvetica;
     font-weight: bolder;
-    color: white;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
+#desc{
+    font-family: "Nolan Extra Bold";
+}
 
 #slider-container{
     top: 0;
@@ -40,25 +44,13 @@ body{
     rgb(0, 174, 255);
     background-size: 16px 16px, 16px 16px, 16px 16px, 16px 16px;
     background-position: 0px 0px, 8px 0px, 0px 8px, 8px 8px;
-    margin: 20px 0 0px;
-    padding: 10px 0 px;
+    padding: 20px 0px;
 }
 
 
 #slider-container div h2, 
 #slider-container p:nth-child(n+3){
     margin: 0px 10px;
-}
-
-#slider-container h2{
-    color: rgb(21, 132, 223);
-    font-size: 16px;
-    margin: 0px 10px 5px;
-}
-
-#slider-container p{
-    font-size: 12px;
-    font-family: "Nolan Extra Bold", "PT Sans", sans-serif, Helvetica;
 }
 
 
@@ -148,9 +140,8 @@ body{
 }
 
 .slider-bar .place{
-    font-size: 12px;
     font-weight: 600;
-    color:rgb(21, 132, 223);
+    color:rgb(12, 113, 196);
     margin: 0px 0px 10px 10px;
 }
 
@@ -171,6 +162,23 @@ body{
     vertical-align: middle;
 }
 
+.text{
+    margin: 5px 0 0 0;
+}
+
+.country{
+    font-family: "Open Sans";
+}
+
+.place{
+    font-family: "Gaegu";
+    font-size: 18px;
+}
+
+.detail{
+    font-family: "Open Sans";
+}
+
 button.info{
     height: 25px;
     margin: 10px;
@@ -178,10 +186,10 @@ button.info{
     height: 30px;
     border: none;
     border-radius: 3px;
-    background: #00ADA9;
+    background: rgb(0, 82, 107);
     color: white;
     font-family: "PT Sans", sans-serif, Helvetica;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
 }
