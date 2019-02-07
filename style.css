@@ -10,13 +10,18 @@
     src: url("fonts/PT_Sans-Web-Regular.ttf");
 }
 
+html,body, main{
+    height: 100%;
+}
+
 body{
     margin: 0;
 }
 
+
 .central-container{
     margin: 0 auto;
-    width: 1200px;
+    width: 80%;
 }
 
 #title{
@@ -31,19 +36,19 @@ body{
 }
 
 #slider-container{
-    top: 0;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    /*Create BG pattern*/
+    height: 100%;
     background:
     radial-gradient(rgba(50,50,50,0.06) 0.5px, transparent 2px), 
     radial-gradient(rgba(50,50,50,0.05) 0.5px, transparent 2px),
     radial-gradient(rgba(50,50,50,0.05) 0.5px, transparent 2px), 
     radial-gradient(rgba(50,50,50,0.06) 0.5px, transparent 2px),
     rgb(0, 174, 255);
+    /*Create BG pattern*/
     background-size: 16px 16px, 16px 16px, 16px 16px, 16px 16px;
     background-position: 0px 0px, 8px 0px, 0px 8px, 8px 8px;
+    top: 0;
+    margin: 0;
+    position: relative;    
     padding: 20px 0px;
 }
 
@@ -107,24 +112,20 @@ body{
 
 .slider-hide{
     overflow: hidden;
-    width: 1200px;
+    height: 500px;
+    position: relative;
 }
 
 .slider-bar{
-    position: relative;
-    display: inline-flex;
+    position: absolute;
     overflow: hidden;
-    top: 0;
-    left: 0;
+    white-space:nowrap;
     transition: 0.4s;
 }
 
-.slider-bar img{
-    width: 270px;
-}
 
 .slider-bar article{
-    margin: 0px 40px 50px 0px;
+    margin: 0px 30px 40px 0px;
 }
 
 .dash{/*line*/
@@ -133,6 +134,8 @@ body{
 }
 
 .slides{
+    display: inline-block;
+    white-space: initial;
     position: relative;
     overflow: hidden;
     width: 270px;
@@ -150,16 +153,16 @@ body{
     padding: 0 0 20px 0;
 }
 
-.frame .images{
+.frame .images{/*set image to middle*/
     background: black;
-    width: 265;
-    height: 218px;
+    height: 220px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.frame .images img {/*fix image to middle*/
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+.frame .images img {
+    width: 100%;
+    height: auto;
 }
 
 .text{
